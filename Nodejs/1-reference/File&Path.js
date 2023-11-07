@@ -14,7 +14,7 @@ console.log("Dir Name ", __dirname);
 fs.mkdir(Path.join(__dirname,'main'),{},(err)=>{
  if(err) throw err;
  event.emit("New directory Event triggered");
- fs.writeFile(Path.join(__dirname,'./main','index.txt'),"Hello World",(err)=>{
+ fs.writeFile(Path.join("/home/ideofuzion/Documents/Learning-Nodejs/Nodejs/1-reference",'./main','index.txt'),"Hello World",(err)=>{
     if(err) throw err;
  })
  fs.rename(Path.join(__dirname,'./main','index.txt' ),Path.join(__dirname,'./main','main.txt' ),(err, data)=>{
